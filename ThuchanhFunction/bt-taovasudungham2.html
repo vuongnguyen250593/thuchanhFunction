@@ -16,16 +16,27 @@
         // alert(tinhbinhphuong(num));
 
         // Bài 2
-        let radius = parseFloat(prompt("Nhập vào bán kính hình tròn"));
-        function area(radius) {
-            return ("Diện tích hình tròn = " + radius**2 * 3.14);
+        // let radius = parseFloat(prompt("Nhập vào bán kính hình tròn"));
+        // function area(radius) {
+        //     return ("Diện tích hình tròn = " + radius**2 * 3.14);
+        // }
+        // document.write(area(radius));
+        // document.write("<br>");
+        // function perimeter(radius) {
+        //     return ("Chu vi hình tròn = " + radius * 2 * 3.14);
+        // }
+        // document.write(perimeter(radius));
+
+        // Bài 3 Tính giai thừa
+        let num = parseInt(prompt("Nhập 1 số nguyên bất kì"));
+        let tich = 1;
+        function tinhgaithua(num) {
+            for (i = num; i >= 1; i--) {
+                tich = tich * i;
+            }
+            return tich;
         }
-        document.write(area(radius));
-        document.write("<br>");
-        function perimeter(radius) {
-            return ("Chu vi hình tròn = " + radius * 2 * 3.14);
-        }
-        document.write(perimeter(radius));
+        document.write(tinhgaithua(num));
     </script>
 </body>
 </html>
