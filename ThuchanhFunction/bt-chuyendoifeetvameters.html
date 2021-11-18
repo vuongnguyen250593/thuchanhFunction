@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Chuyển đổi từ feet sang met
+        let feet = parseFloat(prompt("Nhập feet"));
+        function changefeettometers(feet) {
+            let met = feet / 0.35;
+            return met;
+        }
+        alert(changefeettometers(feet));
+
+        // Chuyển đổi từ met sang feet
+        let met = parseFloat(prompt("Nhập met"));
+        function changefeettometers(met) {
+            let feet = met * 0.35;
+            return feet;
+        }
+        alert(changefeettometers(met));
+    </script>
+</body>
+</html>
