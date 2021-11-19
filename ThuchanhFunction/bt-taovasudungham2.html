@@ -68,14 +68,28 @@
         // alert(findInteger(integer));
 
         // Bài 7
-        let num1 = parseInt(prompt("Enter number 1"));
-        let num2 = parseInt(prompt("Enter number 2"));
-        let array = [num1,num2];
-        function reverse(array) {
+        // let num1 = parseInt(prompt("Enter number 1"));
+        // let num2 = parseInt(prompt("Enter number 2"));
+        // let array = [num1,num2];
+        // function reverse(array) {
+        //     array.reverse();
+        //     return array;
+        // }
+        // document.write(reverse(array));
+        
+        // Bài 8
+        let number = parseInt(prompt("Nhập vào số phần tử trong Array"));
+        let array = new Array(number);
+        for (let i = 0; i < number ; i++) {
+            let num = parseFloat(prompt("Nhập các giá trị trong mảng"));
+            array.push(num);
+        }
+
+        function reverseArray(array) {
             array.reverse();
             return array;
         }
-        document.write(reverse(array));
+        document.write(reverseArray(array));
     </script>
 </body>
 </html>
