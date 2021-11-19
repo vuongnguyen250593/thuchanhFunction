@@ -28,15 +28,54 @@
         // document.write(perimeter(radius));
 
         // Bài 3 Tính giai thừa
-        let num = parseInt(prompt("Nhập 1 số nguyên bất kì"));
-        let tich = 1;
-        function tinhgaithua(num) {
-            for (i = num; i >= 1; i--) {
-                tich = tich * i;
-            }
-            return tich;
+        // let num = parseInt(prompt("Nhập 1 số nguyên bất kì"));
+        // let tich = 1;
+        // function tinhgaithua(num) {
+        //     for (i = num; i >= 1; i--) {
+        //         tich = tich * i;
+        //     }
+        //     return tich;
+        // }
+        // document.write(tinhgaithua(num));
+
+        // Bài 5 Find Min
+        // let integer1 = parseInt(prompt("Nhập vào số nguyên a"));
+        // let integer2 = parseInt(prompt("Nhập vào số nguyên b"));
+        // let integer3 = parseInt(prompt("Nhập vào số nguyên c"));
+        // function findMin(integer1, integer2, integer3) {
+        //     let min = integer1;
+        //     if (integer1 < integer2 && integer1 < integer3) {
+        //         return (min = integer1);
+        //     } else if (integer2 < integer3) {
+        //         return (min = integer2);
+        //     } else {
+        //         return (min = integer3);
+        //     }
+        // }
+        // document.write(findMin(integer1,integer2,integer3));
+        
+        // Bài 6
+        // let integer = parseInt(prompt("Nhập vào một số nguyên"));
+        // function findInteger(integer) {
+        //     if (integer === 0) {
+        //         return (integer + " không phải là một số nguyên");
+        //     } else if (integer > 0) {
+        //         return (integer + " là một số nguyên dương");
+        //     } else {
+        //         return (integer + " là một số nguyên âm");
+        //     }
+        // }
+        // alert(findInteger(integer));
+
+        // Bài 7
+        let num1 = parseInt(prompt("Enter number 1"));
+        let num2 = parseInt(prompt("Enter number 2"));
+        let array = [num1,num2];
+        function reverse(array) {
+            array.reverse();
+            return array;
         }
-        document.write(tinhgaithua(num));
+        document.write(reverse(array));
     </script>
 </body>
 </html>
